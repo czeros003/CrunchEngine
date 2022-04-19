@@ -1,1 +1,2 @@
-# Crunch-Engine-
+# CrunchEngine
+Diploma by Wojciech Czerski
