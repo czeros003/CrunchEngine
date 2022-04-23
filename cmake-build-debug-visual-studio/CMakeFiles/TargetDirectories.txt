@@ -1,0 +1,6 @@
+C:/Diploma/CrunchEngine/cmake-build-debug-visual-studio/CMakeFiles/CrunchEngine.dir
+C:/Diploma/CrunchEngine/cmake-build-debug-visual-studio/CMakeFiles/edit_cache.dir
+C:/Diploma/CrunchEngine/cmake-build-debug-visual-studio/CMakeFiles/rebuild_cache.dir
+C:/Diploma/CrunchEngine/cmake-build-debug-visual-studio/libs/CMakeFiles/IMGUI.dir
+C:/Diploma/CrunchEngine/cmake-build-debug-visual-studio/libs/CMakeFiles/edit_cache.dir
+C:/Diploma/CrunchEngine/cmake-build-debug-visual-studio/libs/CMakeFiles/rebuild_cache.dir
