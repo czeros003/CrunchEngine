@@ -15,7 +15,8 @@ set(SOURCE_FILES
 add_library(IMGUI ${SOURCE_FILES})
 
 #=================== GLFW ===================
-add_subdirectory(glfw-3.3.7)
+add_subdirectory(glfw)
 target_link_libraries(${PROJECT_NAME} glfw)
 find_package(OpenGL REQUIRED)
 target_link_libraries(${PROJECT_NAME} OpenGL::GL)
+
