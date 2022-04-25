@@ -3,7 +3,7 @@ project(CrunchEngine)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(${PROJECT_NAME} src/main.cpp)
+add_executable(${PROJECT_NAME} src/main.cpp src/app/Application.cpp src/app/Application.h)
 
 #=================== add IMGUI ===================
 add_subdirectory(libs)
