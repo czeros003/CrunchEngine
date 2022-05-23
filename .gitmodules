@@ -1,0 +1,3 @@
+[submodule "libs/ret"]
+	path = libs/ret
+	url = https://github.com/TShader/RendererEngineeringThesis.git

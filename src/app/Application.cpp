@@ -4,10 +4,16 @@
 
 #include "Application.h"
 #include <IMGUI/imgui.h>
+#include <string>
 
 namespace CrunchApp
 {
     void RenderUI()
+    {
+        MainWindow();
+    }
+
+    void MainWindow()
     {
         static bool opt_fullscreen = true;
         static bool opt_padding = false;
@@ -83,17 +89,153 @@ namespace CrunchApp
         }
 
         ImGui::Begin("Settings");
-        ImGui::Button("Hello");
+
+        static int clicked = 0;
+        if (ImGui::Button("Open Tool Window"))
+        {
+            clicked++;
+        }
+
+        ImGui::Button("Open renderer");
+
+        static float col2[4] = { 0.03f, 0.15f, 0.19f, 0.5f };
+        if (clicked & 1)
+        {
+            bool my_tool_active = true;
+            ImGui::Begin("Tools", &my_tool_active, ImGuiWindowFlags_MenuBar);
+            if (ImGui::BeginMenuBar())
+            {
+                if (ImGui::BeginMenu("File"))
+                {
+                    if (ImGui::MenuItem("Open..", "Ctrl+O")) { /* Do stuff */ }
+                    if (ImGui::MenuItem("Save", "Ctrl+S"))   { /* Do stuff */ }
+                    if (ImGui::MenuItem("Close", "Ctrl+W"))  { my_tool_active = false; }
+                    ImGui::EndMenu();
+                }
+                ImGui::EndMenuBar();
+            }
+
+            // Edit a color (stored as ~4 floats)
+            ImGui::ColorEdit4("Color", col2);
+
+            // Plot some values
+            const float my_values[] = { 0.2f, 0.1f, 1.0f, 0.5f, 0.9f, 2.2f };
+            ImGui::PlotLines("Frame Times", my_values, IM_ARRAYSIZE(my_values));
+
+            // Display contents in a scrolling region
+            ImGui::TextColored(ImVec4(1,1,0,1), "List:");
+            ImGui::BeginChild("Scrolling");
+            for (int n = 0; n < 10; n++) {
+                ImGui::Text("%04d: Object", n);
+            }
+
+            ImGui::EndChild();
+            ImGui::End();
+
+            if (!my_tool_active)
+            {
+                clicked = 0;
+            }
+        }
+
         static float value = 0.0f;
-        ImGui::SliderFloat("Value", &value, -100.0f, 100.0f);
+        ImGui::SliderFloat("Change Style", &value, 0.f, 100.0f);
+
+        if (value >= 20)
+        {
+            ImGui::StyleColorsDark();
+        }
+        if (value >= 30)
+        {
+            ImGui::StyleColorsLight();
+        }
+        if (value >= 60)
+        {
+            ImGui::StyleColorsClassic();
+        }
+
+        if (ImGui::ShowStyleSelector("Style##Selector"))
+        {
+            value = 0;
+        }
+
+        static int clickedMaterialEditor = 0;
+        if (ImGui::Button("Open Material Editor Window"))
+        {
+            clickedMaterialEditor++;
+        }
+
+        if (clickedMaterialEditor)
+        {
+            MaterialEditor();
+        }
+
         ImGui::End();
 
         ImGui::Begin("Content Browser");
+
+        std::string text1 = "Search:";
+//        ImGui::Text(text1.c_str());
+
+        static char buf[32] = u8"type here";
+        ImGui::InputText("Search", buf, IM_ARRAYSIZE(buf));
+        ImGui::SetCursorPosY(0.0f);
+
         ImGui::End();
 
+        ImGui::PushStyleColor(ImGuiCol_WindowBg, ImVec4(col2[0], col2[1], col2[2], col2[3])); // Set window background to red
         ImGui::Begin("Viewport");
+        ImGui::PopStyleColor();
+        auto windowWidth = ImGui::GetWindowSize().x;
+        auto windowHeight = ImGui::GetWindowSize().y;
+
+        std::string text = "This is a scene";
+        auto textWidth= ImGui::CalcTextSize(text.c_str()).x;
+        auto textHeight= ImGui::CalcTextSize(text.c_str()).y;
+
+        ImGui::SetCursorPosX((windowWidth - textWidth) * 0.5f);
+        ImGui::SetCursorPosY((windowHeight - textHeight) * 0.5f );
+        ImGui::Text(text.c_str());
+
         ImGui::End();
+
+        ImGui::ShowDemoWindow();
 
         ImGui::End();
     }
+
+    void MaterialEditor()
+    {
+
+        bool my_tool_active = true;
+
+        ImGui::Begin("Material Editor", &my_tool_active, ImGuiWindowFlags_MenuBar);
+        bool AutoScroll = true;
+        ImGuiTextFilter Filter;
+
+        ImGui::Separator();
+
+        // Options menu
+        if (ImGui::BeginPopup("Options"))
+        {
+            ImGui::Checkbox("Auto-scroll", &AutoScroll);
+            ImGui::EndPopup();
+        }
+
+        // Options, Filter
+        if (ImGui::Button("Options"))
+            ImGui::OpenPopup("Options");
+        ImGui::SameLine();
+        Filter.Draw("Filter (\"incl,-excl\") (\"error\")", 180);
+        ImGui::Separator();
+
+        if (!my_tool_active)
+        {
+//            ImGui::EndChild();
+            my_tool_active = false;
+        }
+
+        ImGui::End();
+    }
+
 }

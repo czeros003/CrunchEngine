@@ -2,6 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-default/_deps/assimp-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-default/_deps/glad-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-default/_deps/glfw-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-default/_deps/glm-src" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/libs/glfw" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/libs/imgui" vcs="Git" />
   </component>

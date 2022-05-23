@@ -9,7 +9,9 @@
 namespace CrunchApp
 {
     void RenderUI();
-
+    void MainWindow();
+    void PopUpWindow();
+    void MaterialEditor();
 }
 
 
