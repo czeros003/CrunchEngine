@@ -1,9 +1,9 @@
 [submodule "libs/ret"]
 	path = libs/ret
 	url = https://github.com/TShader/RendererEngineeringThesis.git
-[submodule "libs/imgui"]
-	path = libs/imgui
-	url = https://github.com/ocornut/imgui.git
 [submodule "libs/glfw"]
 	path = libs/glfw
 	url = https://github.com/glfw/glfw.git
+[submodule "libs/imgui"]
+	path = libs/imgui
+	url = https://github.com/ocornut/imgui.git
