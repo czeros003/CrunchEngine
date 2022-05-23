@@ -1,0 +1,3 @@
+D:/Wojtek-uczelnia/EPG/CrunchEngine/cmake-build-default/_deps/glad-subbuild/CMakeFiles/edit_cache.dir
+D:/Wojtek-uczelnia/EPG/CrunchEngine/cmake-build-default/_deps/glad-subbuild/CMakeFiles/glad-populate.dir
+D:/Wojtek-uczelnia/EPG/CrunchEngine/cmake-build-default/_deps/glad-subbuild/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,21 @@
+"D:\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\Wojtek-uczelnia\EPG\CrunchEngine
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: D:/CLion 2021.3.4/bin/mingw/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: D:/CLion 2021.3.4/bin/mingw/bin/g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Error at libs/CMakeLists.txt:18 (add_subdirectory):
+  add_subdirectory given source "glfw-3.3.7" which is not an existing
+  directory.
+
+
+-- Found OpenGL: opengl32   
+-- Configuring incomplete, errors occurred!
+See also "D:/Wojtek-uczelnia/EPG/CrunchEngine/cmake-build-crunchengine/CMakeFiles/CMakeOutput.log".

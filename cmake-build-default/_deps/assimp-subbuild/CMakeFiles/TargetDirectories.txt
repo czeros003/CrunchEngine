@@ -1,0 +1,3 @@
+D:/Wojtek-uczelnia/EPG/CrunchEngine/cmake-build-default/_deps/assimp-subbuild/CMakeFiles/rebuild_cache.dir
+D:/Wojtek-uczelnia/EPG/CrunchEngine/cmake-build-default/_deps/assimp-subbuild/CMakeFiles/assimp-populate.dir
+D:/Wojtek-uczelnia/EPG/CrunchEngine/cmake-build-default/_deps/assimp-subbuild/CMakeFiles/edit_cache.dir

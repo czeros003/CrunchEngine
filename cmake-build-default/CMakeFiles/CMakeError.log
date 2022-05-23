@@ -1,0 +1,11 @@
+Determining if the include file pthread.h exists failed with the following output:
+Change Dir: D:/Wojtek-uczelnia/EPG/CrunchEngine/cmake-build-default/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/CLion 2021.3.4/bin/ninja/win/ninja.exe cmTC_af11f && [1/2] Building C object CMakeFiles\cmTC_af11f.dir\CheckIncludeFile.c.obj
+FAILED: CMakeFiles/cmTC_af11f.dir/CheckIncludeFile.c.obj 
+C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe  /nologo   /DWIN32 /D_WINDOWS  /Zi /Ob0 /Od /RTC1 -MDd /showIncludes /FoCMakeFiles\cmTC_af11f.dir\CheckIncludeFile.c.obj /FdCMakeFiles\cmTC_af11f.dir\ /FS -c D:\Wojtek-uczelnia\EPG\CrunchEngine\cmake-build-default\CMakeFiles\CMakeTmp\CheckIncludeFile.c
+D:\Wojtek-uczelnia\EPG\CrunchEngine\cmake-build-default\CMakeFiles\CMakeTmp\CheckIncludeFile.c(1): fatal error C1083: Cannot open include file: 'pthread.h': No such file or directory
+ninja: build stopped: subcommand failed.
+
+
+

@@ -1,0 +1,14 @@
+# Target labels
+ assimp-populate
+# Source files and their labels
+D:/Wojtek-uczelnia/EPG/CrunchEngine/cmake-build-default/_deps/assimp-subbuild/CMakeFiles/assimp-populate
+D:/Wojtek-uczelnia/EPG/CrunchEngine/cmake-build-default/_deps/assimp-subbuild/CMakeFiles/assimp-populate.rule
+D:/Wojtek-uczelnia/EPG/CrunchEngine/cmake-build-default/_deps/assimp-subbuild/CMakeFiles/assimp-populate-complete.rule
+D:/Wojtek-uczelnia/EPG/CrunchEngine/cmake-build-default/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/assimp-populate-build.rule
+D:/Wojtek-uczelnia/EPG/CrunchEngine/cmake-build-default/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/assimp-populate-configure.rule
+D:/Wojtek-uczelnia/EPG/CrunchEngine/cmake-build-default/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/assimp-populate-download.rule
+D:/Wojtek-uczelnia/EPG/CrunchEngine/cmake-build-default/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/assimp-populate-install.rule
+D:/Wojtek-uczelnia/EPG/CrunchEngine/cmake-build-default/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/assimp-populate-mkdir.rule
+D:/Wojtek-uczelnia/EPG/CrunchEngine/cmake-build-default/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/assimp-populate-patch.rule
+D:/Wojtek-uczelnia/EPG/CrunchEngine/cmake-build-default/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/assimp-populate-test.rule
+D:/Wojtek-uczelnia/EPG/CrunchEngine/cmake-build-default/_deps/assimp-subbuild/assimp-populate-prefix/src/assimp-populate-stamp/assimp-populate-update.rule
